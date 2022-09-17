@@ -43,7 +43,6 @@ Route::get('/Album/destroyAll/{id}', [App\Http\Controllers\albumController::clas
  * ==========Routes of album===============
  * ========================================
  */
-Route::get('/image', [App\Http\Controllers\ImageController::class, 'index'])->name('image');
 Route::get('/image/create/{id}', [App\Http\Controllers\ImageController::class, 'create'])->name('image.create');
 Route::post('/image/store', [App\Http\Controllers\ImageController::class, 'store'])->name('image.store');
 Route::get('/image/edit/{id}', [App\Http\Controllers\ImageController::class, 'edit'])->name('image.edit');
